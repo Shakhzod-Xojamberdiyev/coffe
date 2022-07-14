@@ -94,14 +94,13 @@ body{
   background-position:  center ;
 }
 .hero-section-wrapper{
-  display: flex;
-
+  
+ 
   
 }
 .hero-section-text{
-  margin-left: 50px;
+ margin-left: -270px;
  
-  justify-content: start;
   
   
 }
@@ -140,13 +139,22 @@ body{
   
   text-align: center;
   letter-spacing: 1px;
-  font-variant: small-caps;
+ text-transform: uppercase;
   
   color: #FFFFFF;
   mix-blend-mode: normal;
   
   background: #0A775F;
   border-radius: 100px;
+  
+}
+.hero-s-image{
+  position: relative;
+  width: 710px;
+  height: 696px;
+  top: calc(50% - 16px);
+  left: calc(50% - 1374px);
+  
   
 }
 /* .hero-s-image::before{
@@ -170,7 +178,7 @@ body{
 .dumalo{
   position: absolute;
   z-index: 1;
-  top: 66px;
+  top: -30px;
   left: 1310px;
   display: inline-block;
   width: 160px;
@@ -181,8 +189,8 @@ body{
   position: absolute;
   width: 710px;
   height: 696px;
-  top: 130px;
-  left: 1385px;
+  top: 32px;
+  left: 1383px;
   
   
 }
@@ -244,11 +252,12 @@ margin-left: -150px;
 
 }
 .in-danche-main-text{
+  margin-bottom: 0;
 
   font-weight: 500;
   font-size: 48px;
   line-height: 56px;
-  font-variant: small-caps;
+ text-transform: uppercase;
   
   color: #333333;
 }
