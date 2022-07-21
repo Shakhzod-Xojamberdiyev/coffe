@@ -39,6 +39,7 @@
 body{
   margin: 0;
   font-family: "Roboto" , "Arial" , sans-serif;
+  overflow-x: hidden;
 }
 .container{
   width: 1340px;
@@ -102,17 +103,15 @@ body{
 }
 .hero-section{
   display: flex;
-  flex-direction: row-reverse;
   background-image: url("../images/bi1.svg");
   /* background-repeat: no-repeat; */
   background-position:  center ;
+
 }
 
 .hero-section-text{
-  margin-left: -270px;
-  
-  
-  
+  margin-left: 84px;
+
 }
 .section-main-text{
   margin-top: 156px;
@@ -160,47 +159,26 @@ body{
 }
 .hero-s-image{
   position: relative;
-  width: 710px;
-  height: 696px;
-  top: calc(50% - 16px);
-  left: calc(50% - 1374px);
-  
-  
 }
-/* .hero-s-image::before{
+.hero-s-image::before{
   position: absolute;
   z-index: 1;
-  background-position-x:calc( 50% - -31px);
-  background-position-y: calc( 50% - 100px) ;
-  top: 60px;
-  left: 960px;
-  display: inline-block;
   content: "";
-  background-image: url("../images/bugu.svg");
-  background-repeat: no-repeat;
-  background-size: 160px;
-  width: 250px;
-  height: 200px;
-  
-  
-} */
-.dumalo{
-  position: absolute;
-  z-index: 1;
-  top: -30px;
-  left: 1310px;
   display: inline-block;
   width: 160px;
   height: 160px;
+  background-image: url("../images/bugu.svg");
+  background-repeat: no-repeat;
+  background-size: 160px;
+  transform: translate(420%, -474%);
   
 }
 .hero-image{
   position: absolute;
   width: 710px;
   height: 696px;
-  top: 32px;
-  left: 1383px;
-  
+  top: calc(50% - 696px);
+  left: calc(50% + 95px);
   
 }
 
@@ -737,6 +715,7 @@ body{
   
 }
 .headquarter-box{
+  position: relative;
   margin-top: 80px;
   margin-bottom: 100px;
   list-style: none;
@@ -744,6 +723,34 @@ body{
   /* height: 396px; */
   background: #F8F8F2;
   
+}
+
+.headquarter-box::after{
+  position: absolute;
+  top: 40px;
+  left: 250px;
+  content: "";
+  background-image: url("../images/unitedkingdom.svg");
+  width: 120px;
+  height: 140px;
+}
+.headquarter-box:nth-child(2):after{
+  position: absolute;
+  top: 40px;
+  left: 250px;
+  content: "";
+  background-image: url("../images/canada.svg");
+  width: 120px;
+  height: 120px;
+}
+.headquarter-box:nth-child(3):after{
+  position: absolute;
+  top: 40px;
+  left: 250px;
+  content: "";
+  background-image: url("../images/australia.svg");
+  width: 120px;
+  height: 108px;
 }
 .hq-box-wrap{
   display: flex;
@@ -762,6 +769,10 @@ body{
   line-height: 47px;
   text-transform: uppercase;
   color: #333333;
+}
+.hq-a-box{
+  color: #333333;
+  text-decoration: none;
 }
 .hq-box-main-text-2{
   margin: 0;
@@ -797,6 +808,16 @@ body{
   line-height: 28px;
   color: #333333;
   
+}
+.tel-hq{
+  text-decoration: none;
+  list-style: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+  
+
 }
 .map-img{
   margin-top: 45px;
@@ -1146,7 +1167,7 @@ body{
   background-color: white;
   
   animation-name: modal-animation;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: none;
   animation-direction: alternate-reverse;
   animation-timing-function: ease-in;
